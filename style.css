@@ -1,0 +1,76 @@
+body {
+    font-family: 'Swanky and Moo Moo', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+}
+
+h1 {
+    margin: 20px;
+}
+
+#main-item {
+    width: 300px;
+    text-align: center;
+}
+
+#player-input {
+    margin-bottom: 20px;
+}
+
+#player-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#player-display {
+    margin-bottom: 10px;
+}
+
+#board-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+    display: none;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+}
+
+.menu-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

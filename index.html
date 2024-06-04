@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>等待網頁</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('iu.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .additional-links {
+            margin-top: 20px;
+        }
+
+        .additional-links a {
+            display: block;
+            margin-bottom: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .additional-links a:hover {
+            text-decoration: underline;
+        }
+
+        .dynamic-text {
+            display: inline-block;
+            animation: flicker 1s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <h1>Oops，等待中請稍後<span class="dynamic-text">......</span></h1>
+    <h1>尋找真愛，擁抱浪漫，說散就散</h1>
+    <a id="pure-love-button" class="button">點擊，開始遊戲</a>
+    <div class="additional-links">
+        <a href="https://youtu.be/Gb4Es-8DqMM?si=UmHC-KQHUjxVe5iG&t=176">下船 - 方法一</a>
+        <a href="https://cdn-news.org/News.aspx?EntityID=News&PK=0000000007f47a755d463a948a6d4a488f86416191daca93">下船 - 方法二</a>
+        <a href="https://www.mashup.com.tw/0910272223/?page=one_page&id=3136">下船 - 方法三</a>
+    </div>
+    <a href="https://tinder.com/zh-Hant" style="color: white;">原網址</a> <!-- 新增的超連結 -->
+
+</div>
+
+<script>
+    document.getElementById('pure-love-button').addEventListener('click', function() {
+        window.location.href = 'game.html'; // 設置為遊戲頁面的 URL
+    });
+</script>
+
+</body>
+</html>
